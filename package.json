@@ -1,0 +1,7 @@
+{
+  "name": "acusticaribeiro-site",
+  "private": true,
+  "scripts": {
+    "update-portfolio": "node scripts/update-portfolio-manifest.mjs"
+  }
+}

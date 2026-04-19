@@ -1,0 +1,36 @@
+# Regenera manifest.json quando alterar fotos em images/photos/portifolio/
+name: Atualizar manifest do portfólio
+on:
+  push:
+    paths:
+      - 'images/photos/portifolio/*.jpeg'
+      - 'images/photos/portifolio/*.jpg'
+      - 'images/photos/portifolio/*.JPEG'
+      - 'images/photos/portifolio/*.JPG'
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm run update-portfolio
+
+      - name: Commit e push se manifest mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/photos/portifolio/manifest.json
+          if git diff --staged --quiet; then
+            echo "manifest.json sem alterações."
+          else
+            git commit -m "chore: atualizar manifest do portfólio"
+            git push
+          fi
