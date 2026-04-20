@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
+<urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
@@ -10,8 +10,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.acusticaribeiro.com.br/images/backgrounds/pages/homePage/homepage.png</image:loc>
-      <image:title>Isolamento acústico em Brasília DF — Acustica Ribeiro</image:title>
-      <image:caption>Portas, paredes e painéis acústicos com instalação no DF e entorno</image:caption>
+      <image:title>Isolamento acústico e portas acústicas em Brasília DF e entorno | Acustica Ribeiro</image:title>
+      <image:caption>Portas acústicas, paredes e painéis com medição e instalação no DF, RMB e entorno de Brasília.</image:caption>
     </image:image>
   </url>
 
@@ -22,8 +22,8 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://www.acusticaribeiro.com.br/images/backgrounds/pages/acousticDoor/acousticDoor.png</image:loc>
-      <image:title>Portas acústicas em Brasília e região</image:title>
-      <image:caption>Portas acústicas sob medida com redução de ruído 45+ dB e instalação profissional</image:caption>
+      <image:title>Portas acústicas sob medida e isolamento acústico em Brasília e região</image:title>
+      <image:caption>Portas acústicas sob medida com desempenho acústico da ordem de 45+ dB, vedação e instalação no DF e entorno.</image:caption>
     </image:image>
   </url>
 

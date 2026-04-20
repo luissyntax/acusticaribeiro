@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap — domínio preferencial (www)
+# Evita indexação de pastas de build/automação se o repositório for publicado por completo (ex.: GitHub Pages)
+Disallow: /.github/
+Disallow: /scripts/
+
+# Sitemap — use sempre o host canônico (www) alinhado ao canonical das páginas
 Sitemap: https://www.acusticaribeiro.com.br/sitemap.xml
